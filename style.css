@@ -89,6 +89,11 @@ h1{
     text-align: left;
     padding: 0 20px;
 }
+h2{
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
 
 @media(max-width: 560px){
     body{
