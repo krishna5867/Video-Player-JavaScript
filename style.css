@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    background:linear-gradient(to right, #1a2980, #26d0ce);
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.container{
+    display: flex;
+    text-align: center;
+    height: 100vh;
+}
+.container .main{
+    border-radius: 10px;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+.video video{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.playlist{
+    width: 320px;
+    border-radius: 5px;
+    height: 330px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.playlist::-webkit-scrollbar{
+    width: 6px;
+}
+.playlist::-webkit-scrollbar-track{
+    background-color: #fff;
+    border-radius: 50px;
+
+}
+.playlist::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 50px;
+}
+.list{
+    width: 300px;
+    display: flex;
+    cursor: pointer;
+}
+.list video{
+    width: 100px;
+    padding: 20px;
+}
+.list .title{
+    width: 200px;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+.list .title h3{
+    font-size: 16px;
+}
+
+.active{
+    background-color: blue;
+    width: 450px;
+    border-radius: 10px;
+}
+.video .title{
+    background-color: #fff;
+    padding: 8px;
+}
+.video .title{
+    font-size: 24px;
+    color: #000;
+    text-align: left;
+    padding: 0 20px;
+}
+
+@media(max-width: 560px){
+    body{
+        overflow-y: hidden;
+    }
+    h1{
+        margin-top: 0;
+        padding-bottom: 0px;
+    }
+    .container{
+        margin: 0px auto;
+    }
+    .container .main{
+        margin-top: 0;
+        width: 450px;
+        padding: 0 10px 0 10px;
+        display: block;
+        flex-direction: column;
+    }
+    .video video{
+        width: 450px;
+        height: 230px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .playlist{
+        width: 450px;
+    }
+    .playlist::-webkit-scrollbar{
+        width: 10px;
+    }
+    .playlist::-webkit-scrollbar-track{
+        background-color: #fff;
+        border-radius: 10px;
+    
+    }
+    .playlist::-webkit-scrollbar-thumb{
+        background-color: gray;
+        border-radius: 2px;
+    }
+    .title{
+        display: none;
+    }
+
+}
